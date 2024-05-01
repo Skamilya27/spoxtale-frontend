@@ -13,7 +13,7 @@ const UserDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/${username}`)
+      .get(`https://spoxtale-backend.onrender.com/${username}`)
       .then((res) => {
         console.log(res.data.urls[0]);
         setUser(res.data);
