@@ -9,7 +9,7 @@ const UserList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080")
+      .get("https://spoxtale-backend.onrender.com")
       .then((res) => {
         // console.log(res.data);
         setUsers(res.data);
